@@ -58,13 +58,13 @@ export class Department extends Component{
                                 <td>{dep.DepartmentName}</td>
                                 <td>
 <ButtonToolbar>
-    <Button className="mr-2" variant="info"
+    <Button className="mr-2" variant="success"
     onClick={()=>this.setState({editModalShow:true,
         depid:dep.DepartmentId,depname:dep.DepartmentName})}>
             Edit
         </Button>
 
-        <Button className="mr-2" variant="danger"
+        <Button className="mr-2" variant="warning"
     onClick={()=>this.deleteDep(dep.DepartmentId)}>
             Delete
         </Button>
